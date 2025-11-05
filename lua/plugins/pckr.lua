@@ -100,11 +100,10 @@ pckr.add {
     },
     {
         'mason-org/mason-lspconfig.nvim',
-
         config = function()
             require('plugins.config.lsp.lsp')()
         end,
         requires = { 'neovim/nvim-lspconfig' }
-    }
+    },
 }
 

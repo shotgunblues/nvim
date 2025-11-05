@@ -9,15 +9,4 @@ return function()
             }
         }
     })
-    local ok, mlsp = pcall(require, 'mason-lspconfig')
-    if ok then
-        mlsp.setup({
-            ensure_installed = {
-                'gopls', 'pyright', 'yamlls',
-                'dockerls', 'docker_compose_language_service',
-            },
-            automatic_installation = true,
-            automatic_enable = true,
-        })
-    end
 end
